@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Projetos — Instituto Solidário</title>
-  <meta name="description" content="Lista de projetos e oportunidades de voluntariado.">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Projetos - Instituto Cruzeiro do Sul</title>
+  <meta name="description" content="Projetos sociais, oportunidades de voluntariado e formas de doar.">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Pular para o conteúdo</a>
   <header class="site-header" role="banner">
     <div class="container">
-      <h1 class="brand">Instituto Solidário</h1>
-      <nav aria-label="Navegação principal">
+      <h1 class="brand"><a href="index.html">Instituto Cruzeiro do Sul</a></h1>
+      <nav aria-label="Menu principal">
         <ul class="nav">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
           <li><a href="cadastro.html">Cadastro</a></li>
         </ul>
       </nav>
@@ -23,44 +23,47 @@
   </header>
 
   <main id="main" class="container" role="main">
-    <header class="section-header">
-      <h2>Projetos em Andamento</h2>
-      <p>Encontre oportunidades de voluntariado e campanhas para apoiar.</p>
-    </header>
+    <h2>Projetos Sociais</h2>
 
-    <section class="project-list" aria-label="Lista de projetos">
-      <article class="project" aria-labelledby="proj1-title">
-        <img src="images/proj1.svg" alt="Projeto de alfabetização" loading="lazy">
-        <div>
-          <h3 id="proj1-title">Projeto Alfabetizar</h3>
-          <p>Curso de alfabetização para jovens e adultos.</p>
-          <p><strong>Meta:</strong> 500 beneficiários</p>
-        </div>
-      </article>
+    <article aria-labelledby="projeto1" class="projeto-card">
+      <div class="projeto-content">
+        <h3 id="projeto1">Educação Digital</h3>
+        <p>Curso de introdução ao desenvolvimento web para jovens de baixa renda.</p>
+        <p><a href="cadastro.html">Inscreva-se como voluntário</a> — <a href="#doar">Doar para o projeto</a></p>
+      </div>
+      <figure class="projeto-figura">
+        <img src="https://scontent-gru1-2.xx.fbcdn.net/v/t39.30808-6/299985128_627050399126127_2587879510702711840_n.png?_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=qGxV6Kk5tOkQ7kNvwELVtfH&_nc_oc=Adk1EW_cOZ8nKVA6u5UeiOHWRpPXkPU8fKtedyPXTdaGcQyk5AWXaJUEVKNcG-4LCv8&_nc_zt=23&_nc_ht=scontent-gru1-2.xx&_nc_gid=fQsOXzHPa5GoeE8QLYR1yw&oh=00_Afd08ygW73N9NVpAuDUqHolfAll6oSIbJ9lzf-6Q-Amjtw&oe=6906F984" 
+             alt="Ilustração: Educação Digital" width="600" height="300">
+        <figcaption>Oficinas práticas e material didático.</figcaption>
+      </figure>
+    </article>
 
-      <article class="project" aria-labelledby="proj2-title">
-        <img src="images/proj2.svg" alt="Projeto de hortas urbanas" loading="lazy">
-        <div>
-          <h3 id="proj2-title">Hortas Urbanas</h3>
-          <p>Implementação de hortas comunitárias e oficinas.</p>
-          <p><strong>Meta:</strong> 20 hortas instaladas</p>
-        </div>
-      </article>
-    </section>
+    <article aria-labelledby="projeto2" class="projeto-card">
+      <div class="projeto-content">
+        <h3 id="projeto2">Alimentando Futuros</h3>
+        <p>Distribuição de cestas básicas e oficinas de empreendedorismo.</p>
+        <p><a href="cadastro.html">Inscreva-se como voluntário</a> — <a href="#doar">Doar para o projeto</a></p>
+      </div>
+      <figure class="projeto-figura">
+        <img src="https://www.reciclasampa.com.br/imgs/conteudos/2_projeto_3_mil_hortas_predio_padrao.jpg" 
+             alt="Imagem ilustrativa do projeto Alimentando Futuros" width="600" height="300">
+        <figcaption>Projeto de distribuição e sustentabilidade alimentar.</figcaption>
+      </figure>
+    </article>
 
-    <section class="donation" aria-labelledby="donate-title">
-      <h3 id="donate-title">Campanhas e Doações</h3>
-      <p>Participe das campanhas em destaque e acompanhe o progresso em tempo real.</p>
-      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="45" style="--value:45%">45%</div>
+    <section id="doar" aria-labelledby="doar-title" class="donation">
+      <h3 id="doar-title">Como doar</h3>
+      <p>Transferência bancária, cartão (simulado) ou plataformas parceiras.</p>
+      <p>Meta atual: <strong>R$ 10.000</strong> — Progresso: <progress value="4200" max="10000">42%</progress></p>
     </section>
   </main>
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p>&copy; 2025 Instituto Solidário</p>
+      <p>&copy; <span id="ano2"></span> Instituto Cruzeiro do Sul</p>
     </div>
   </footer>
 
-  <script src="js/main.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
