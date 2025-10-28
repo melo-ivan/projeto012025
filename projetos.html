@@ -9,13 +9,14 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
   <header class="site-header" role="banner">
     <div class="container">
       <h1 class="brand"><a href="index.html">Instituto Cruzeiro do Sul</a></h1>
       <nav aria-label="Menu principal">
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
           <li><a href="cadastro.html">Cadastro</a></li>
         </ul>
       </nav>
@@ -25,7 +26,7 @@
   <main id="main" class="container" role="main">
     <h2>Projetos Sociais</h2>
 
-    <article aria-labelledby="projeto1" class="projeto-card">
+    <article aria-labelledby="projeto1" class="projeto-card project">
       <div class="projeto-content">
         <h3 id="projeto1">Educação Digital</h3>
         <p>Curso de introdução ao desenvolvimento web para jovens de baixa renda.</p>
@@ -38,7 +39,7 @@
       </figure>
     </article>
 
-    <article aria-labelledby="projeto2" class="projeto-card">
+    <article aria-labelledby="projeto2" class="projeto-card project">
       <div class="projeto-content">
         <h3 id="projeto2">Alimentando Futuros</h3>
         <p>Distribuição de cestas básicas e oficinas de empreendedorismo.</p>
@@ -54,7 +55,9 @@
     <section id="doar" aria-labelledby="doar-title" class="donation">
       <h3 id="doar-title">Como doar</h3>
       <p>Transferência bancária, cartão (simulado) ou plataformas parceiras.</p>
-      <p>Meta atual: <strong>R$ 10.000</strong> — Progresso: <progress value="4200" max="10000">42%</progress></p>
+      <p>Meta atual: <strong>R$ 10.000</strong> — Progresso: 
+        <progress value="4200" max="10000">42%</progress>
+      </p>
     </section>
   </main>
 
